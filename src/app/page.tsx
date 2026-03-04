@@ -48,7 +48,6 @@ export default function Home() {
           <LinkButton
             href="https://lkpf.pro/f904"
             title="Regístrate Aquí y Obtén Bonos"
-            subtitle="Plataforma principal recomendada"
             icon={<Rocket className="w-6 h-6" />}
             featured
             highlightBadge="Código: ELHIJODELJEFE"
