@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     locale: "es_ES",
     type: "profile",
   },
+  icons: {
+    icon: "/elhijodeljefe.jpeg",
+    shortcut: "/elhijodeljefe.jpeg",
+    apple: "/elhijodeljefe.jpeg",
+  },
 };
 
 export default function RootLayout({
