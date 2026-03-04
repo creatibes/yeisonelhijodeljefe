@@ -11,7 +11,7 @@ export function FloatingWhatsApp() {
             transition={{ delay: 1.5, type: "spring", stiffness: 200, damping: 20 }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            href="https://wa.me/numerod whatsapp" // Reemplazar
+            href="https://wa.me/19298026704"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 z-40 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-[0_0_20px_rgba(37,211,102,0.4)] overflow-hidden p-2.5"
