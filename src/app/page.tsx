@@ -80,7 +80,7 @@ export default function Home() {
           <LinkButton
             onClick={() => setIsRegisterModalOpen(true)}
             title="¿Cómo Registrarse Correctamente?"
-            subtitle="Tutorial paso a paso en video de 1 minuto"
+            subtitle="Tutorial paso a paso en video de 25s."
             icon={<Video className="w-6 h-6" />}
             delay={0.9}
           />
