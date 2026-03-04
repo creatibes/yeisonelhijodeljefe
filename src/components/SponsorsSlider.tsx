@@ -45,7 +45,7 @@ const RepeatedList = () => (
 export function SponsorsSlider() {
     return (
         <div
-            className="w-full max-w-5xl mx-auto overflow-hidden relative mt-2 mb-4"
+            className="w-full max-w-5xl mx-auto overflow-hidden relative -mt-6 lg:mt-0 mb-4"
             style={{
                 WebkitMaskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)',
                 maskImage: 'linear-gradient(to right, transparent, black 15%, black 85%, transparent)'
