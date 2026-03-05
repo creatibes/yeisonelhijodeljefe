@@ -15,6 +15,7 @@ export default function Home() {
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
   const [isWithdrawModalOpen, setIsWithdrawModalOpen] = useState(false);
   const [isPromoModalOpen, setIsPromoModalOpen] = useState(false);
+  const [isEarnMoneyModalOpen, setIsEarnMoneyModalOpen] = useState(false);
 
   return (
     <main className="min-h-screen relative flex flex-col pb-24">
@@ -83,6 +84,17 @@ export default function Home() {
             subtitle="Tutorial paso a paso en video de 25s."
             icon={<Video className="w-6 h-6" />}
             delay={0.9}
+          />
+
+          <LinkButton
+            onClick={() => setIsEarnMoneyModalOpen(true)}
+            title="¿Cómo Generar Dinero Jugando?"
+            subtitle="Trucos y estrategias para ganar en 1WIN"
+            icon={<Rocket className="w-6 h-6" />}
+            delay={0.95}
+            highlightBadge="✨ NUEVO"
+            badgeStyle="hot"
+            badgePosition="top-right"
           />
 
           <LinkButton
@@ -176,6 +188,43 @@ export default function Home() {
           >
             Ir a la Plataforma
             <Wallet className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </BaseModal>
+
+      <BaseModal
+        isOpen={isEarnMoneyModalOpen}
+        onClose={() => setIsEarnMoneyModalOpen(false)}
+        title="Cómo Generar Dinero Jugando"
+      >
+        <div className="aspect-[9/16] max-h-[60vh] sm:max-h-[70vh] w-full max-w-sm mx-auto rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/10">
+          <video
+            src="/comogenerojugando.mp4"
+            controls
+            autoPlay
+            className="w-full h-full object-contain"
+          >
+            Tu navegador no soporta el formato de video.
+          </video>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center justify-center gap-4 w-full">
+          <p className="text-gray-300 text-sm text-center">
+            Usa el código para activar los beneficios y optimizar tus ganancias:
+          </p>
+
+          <div className="w-full">
+            <PromoCodeBox code="ELHIJODELJEFE" />
+          </div>
+
+          <a
+            href="https://lkpf.pro/f904"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full relative px-6 py-3 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 mt-2 group border border-white/20"
+          >
+            Empezar a Ganar
+            <Rocket className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
       </BaseModal>

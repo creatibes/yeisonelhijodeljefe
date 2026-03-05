@@ -5,11 +5,11 @@ import Image from "next/image";
 
 // Secuencia requerida: Logo 1Win, Texto Bono, Logo 1Win, Texto Bono...
 const items = [
-    { type: 'logo', src: '/1win.png', width: 90, height: 35 },
+    { type: 'logo', src: '/1win2.png', width: 120, height: 45 },
     { type: 'text', text: 'BONO +500%' },
-    { type: 'logo', src: '/1win.png', width: 90, height: 35 },
+    { type: 'logo', src: '/1win2.png', width: 120, height: 45 },
     { type: 'text', text: 'BONO +500%' },
-    { type: 'logo', src: '/1win.png', width: 90, height: 35 },
+    { type: 'logo', src: '/1win2.png', width: 120, height: 45 },
     { type: 'text', text: 'BONO +500%' },
 ];
 
@@ -33,7 +33,7 @@ const RepeatedList = () => (
                         />
                     </div>
                 ) : (
-                    <span className="text-2xl sm:text-3xl font-black italic tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-blue-400 drop-shadow-[0_2px_10px_rgba(59,130,246,0.8)] px-4">
+                    <span className="text-2xl sm:text-3xl font-black italic tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-white drop-shadow-[0_2px_15px_rgba(255,255,255,0.4)] px-4">
                         {item.text}
                     </span>
                 )}
