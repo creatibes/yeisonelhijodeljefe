@@ -8,12 +8,13 @@ import { BaseModal } from "@/components/BaseModal";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { PromoCodeBox } from "@/components/PromoCodeBox";
 import { SponsorsSlider } from "@/components/SponsorsSlider";
-import { Rocket, Trophy, Video, Wallet } from "lucide-react";
+import { Rocket, Trophy, Video, Wallet, Gift } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
   const [isWithdrawModalOpen, setIsWithdrawModalOpen] = useState(false);
+  const [isPromoModalOpen, setIsPromoModalOpen] = useState(false);
 
   return (
     <main className="min-h-screen relative flex flex-col pb-24">
@@ -85,11 +86,19 @@ export default function Home() {
           />
 
           <LinkButton
+            onClick={() => setIsPromoModalOpen(true)}
+            title="Reclama tu Bono Especial +500%"
+            subtitle="Multiplica tus primeros depósitos al instante"
+            icon={<Gift className="w-6 h-6" />}
+            delay={1.0}
+          />
+
+          <LinkButton
             onClick={() => setIsWithdrawModalOpen(true)}
             title="Guía: Cómo Retirar tus Ganancias"
             subtitle="Pasos rápidos para disfrutar tus ingresos"
             icon={<Wallet className="w-6 h-6" />}
-            delay={1.0}
+            delay={1.1}
           />
         </motion.div>
       </div>
@@ -137,6 +146,43 @@ export default function Home() {
       <BaseModal
         isOpen={isWithdrawModalOpen}
         onClose={() => setIsWithdrawModalOpen(false)}
+        title="Guía de Retiro"
+      >
+        <div className="aspect-[9/16] max-h-[60vh] sm:max-h-[70vh] w-full max-w-sm mx-auto rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/10">
+          <video
+            src="/comoretirar.mp4"
+            controls
+            autoPlay
+            className="w-full h-full object-contain"
+          >
+            Tu navegador no soporta el formato de video.
+          </video>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center justify-center gap-4 w-full">
+          <p className="text-gray-300 text-sm text-center">
+            Asegúrate de usar el código para acceder a los bonos exclusivos dentro de la plataforma:
+          </p>
+
+          <div className="w-full">
+            <PromoCodeBox code="ELHIJODELJEFE" />
+          </div>
+
+          <a
+            href="https://lkpf.pro/f904"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full relative px-6 py-3 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 mt-2 group border border-white/20"
+          >
+            Ir a la Plataforma
+            <Wallet className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </BaseModal>
+
+      <BaseModal
+        isOpen={isPromoModalOpen}
+        onClose={() => setIsPromoModalOpen(false)}
         title="Bono Especial +500%"
         maxWidth="max-w-4xl" // Wider modal for the split layout
       >
