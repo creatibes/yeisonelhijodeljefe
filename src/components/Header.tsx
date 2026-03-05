@@ -36,7 +36,7 @@ export function Header() {
                         </svg>
                     </span>
                 </h1>
-                <p className="text-gray-400 font-medium text-sm">Entretenimiento | Vivo para Cristo ♥️</p>
+                <p className="text-gray-400 font-medium text-sm">Sin vueltas: juega, gana y retira.</p>
             </motion.div>
 
             <div className="flex gap-4 pt-2">
