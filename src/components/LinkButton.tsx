@@ -123,7 +123,7 @@ export function LinkButton({
 
     if (href) {
         return (
-            <a href={href} target="_blank" rel="noopener noreferrer" className="block w-full">
+            <a href={href} target="_blank" rel="noopener noreferrer" className="block w-full" suppressHydrationWarning>
                 {content}
             </a>
         );
