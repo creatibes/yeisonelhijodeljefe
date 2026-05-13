@@ -48,7 +48,7 @@ export default function Home() {
           </motion.div>
 
           <LinkButton
-            href="https://lkpf.pro/f904"
+            href="https://1win.in"
             title="Regístrate Aquí y Obtén Bonos"
             icon={<Rocket className="w-6 h-6" />}
             featured
@@ -144,8 +144,9 @@ export default function Home() {
           </div>
 
           <a
-            href="https://lkpf.pro/f904"
+            href="https://1win.in"
             target="_blank"
+            suppressHydrationWarning
             rel="noopener noreferrer"
             className="w-full relative px-6 py-3 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 mt-2 group border border-white/20"
           >
@@ -181,8 +182,9 @@ export default function Home() {
           </div>
 
           <a
-            href="https://lkpf.pro/f904"
+            href="https://1win.in"
             target="_blank"
+            suppressHydrationWarning
             rel="noopener noreferrer"
             className="w-full relative px-6 py-3 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 mt-2 group border border-white/20"
           >
@@ -218,8 +220,9 @@ export default function Home() {
           </div>
 
           <a
-            href="https://lkpf.pro/f904"
+            href="https://1win.in"
             target="_blank"
+            suppressHydrationWarning
             rel="noopener noreferrer"
             className="w-full relative px-6 py-3 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 mt-2 group border border-white/20"
           >
@@ -277,8 +280,9 @@ export default function Home() {
               <PromoCodeBox code="ELHIJODELJEFE" />
 
               <a
-                href="https://lkpf.pro/f904"
+                href="https://1win.in"
                 target="_blank"
+                suppressHydrationWarning
                 rel="noopener noreferrer"
                 className="w-full relative px-6 py-3.5 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 group border border-white/20"
               >
