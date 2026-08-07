@@ -43,7 +43,7 @@ export default function Home() {
             className="w-full max-w-2xl mx-auto mb-2 flex flex-col gap-3"
           >
             <SponsorsSlider />
-            <PromoCodeBox code="´MASPLATA500" />
+            <PromoCodeBox code="MASPLATA500" />
 
           </motion.div>
 
