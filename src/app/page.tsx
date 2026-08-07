@@ -43,16 +43,16 @@ export default function Home() {
             className="w-full max-w-2xl mx-auto mb-2 flex flex-col gap-3"
           >
             <SponsorsSlider />
-            <PromoCodeBox code="ELHIJODELJEFE" />
+            <PromoCodeBox code="´MASPLATA500" />
 
           </motion.div>
 
           <LinkButton
-            href="https://1win.in"
+            href="https://lkhv.pro/141b4e5b"
             title="Regístrate Aquí y Obtén Bonos"
             icon={<Rocket className="w-6 h-6" />}
             featured
-            highlightBadge="Código: ELHIJODELJEFE"
+            highlightBadge="Código: MASPLATA500"
             pulse
             delay={0.7}
             rightContent={
@@ -66,8 +66,8 @@ export default function Home() {
           />
 
           <LinkButton
-            href="https://t.me/YeisonDanielSmith1"
-            title="Únete a la Comunidad (Telegram)"
+            href="https://whatsapp.com/channel/0029VbCaXHg8F2pBfjFNoJ0t"
+            title="Únete a la Comunidad (WhatsApp)"
             subtitle="Estrategias, señales y sesiones en vivo gratuitas"
             icon={<Trophy className="w-6 h-6" />}
             highlightBadge="🔥 HOT"
@@ -140,11 +140,11 @@ export default function Home() {
           </p>
 
           <div className="w-full">
-            <PromoCodeBox code="ELHIJODELJEFE" />
+            <PromoCodeBox code="MASPLATA500" />
           </div>
 
           <a
-            href="https://1win.in"
+            href="https://lkhv.pro/141b4e5b"
             target="_blank"
             suppressHydrationWarning
             rel="noopener noreferrer"
@@ -178,11 +178,11 @@ export default function Home() {
           </p>
 
           <div className="w-full">
-            <PromoCodeBox code="ELHIJODELJEFE" />
+            <PromoCodeBox code="MASPLATA500" />
           </div>
 
           <a
-            href="https://1win.in"
+            href="https://lkhv.pro/141b4e5b"
             target="_blank"
             suppressHydrationWarning
             rel="noopener noreferrer"
@@ -216,11 +216,11 @@ export default function Home() {
           </p>
 
           <div className="w-full">
-            <PromoCodeBox code="ELHIJODELJEFE" />
+            <PromoCodeBox code="MASPLATA500" />
           </div>
 
           <a
-            href="https://1win.in"
+            href="https://lkhv.pro/141b4e5b"
             target="_blank"
             suppressHydrationWarning
             rel="noopener noreferrer"
@@ -277,10 +277,10 @@ export default function Home() {
             </div>
 
             <div className="pt-2 w-full flex flex-col gap-4">
-              <PromoCodeBox code="ELHIJODELJEFE" />
+              <PromoCodeBox code="MASPLATA500" />
 
               <a
-                href="https://1win.in"
+                href="https://lkhv.pro/141b4e5b"
                 target="_blank"
                 suppressHydrationWarning
                 rel="noopener noreferrer"
