@@ -79,14 +79,6 @@ export default function Home() {
           />
 
           <LinkButton
-            onClick={() => setIsRegisterModalOpen(true)}
-            title="¿Cómo Registrarse Correctamente?"
-            subtitle="Tutorial paso a paso en video de 25s."
-            icon={<Video className="w-6 h-6" />}
-            delay={0.9}
-          />
-
-          <LinkButton
             onClick={() => setIsEarnMoneyModalOpen(true)}
             title="¿Cómo Generar Dinero Jugando?"
             subtitle="Trucos y estrategias para ganar en 1WIN"
@@ -118,43 +110,6 @@ export default function Home() {
       <FloatingWhatsApp />
 
       {/* Modals */}
-      <BaseModal
-        isOpen={isRegisterModalOpen}
-        onClose={() => setIsRegisterModalOpen(false)}
-        title="Tutorial de Registro"
-      >
-        <div className="aspect-[9/16] max-h-[60vh] sm:max-h-[70vh] w-full max-w-sm mx-auto rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/10">
-          <video
-            src="/comoregistrarse.mp4"
-            controls
-            autoPlay
-            className="w-full h-full object-contain"
-          >
-            Tu navegador no soporta el formato de video.
-          </video>
-        </div>
-
-        <div className="mt-6 flex flex-col items-center justify-center gap-4 w-full">
-          <p className="text-gray-300 text-sm text-center">
-            Asegúrate de usar el código para acceder a los bonos exclusivos dentro de la plataforma:
-          </p>
-
-          <div className="w-full">
-            <PromoCodeBox code="MASPLATA500" />
-          </div>
-
-          <a
-            href="https://lkhv.pro/141b4e5b"
-            target="_blank"
-            suppressHydrationWarning
-            rel="noopener noreferrer"
-            className="w-full relative px-6 py-3 text-base sm:text-lg font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.3)] text-center transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(147,51,234,0.5)] flex items-center justify-center gap-2 mt-2 group border border-white/20"
-          >
-            Ir a la Plataforma
-            <Rocket className="w-5 h-5 group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </BaseModal>
 
       <BaseModal
         isOpen={isWithdrawModalOpen}
