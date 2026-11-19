@@ -9,6 +9,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { PromoCodeBox } from "@/components/PromoCodeBox";
 import { SponsorsSlider } from "@/components/SponsorsSlider";
 import { TopGames } from "@/components/TopGames";
+import { WithdrawalsSlider } from "@/components/WithdrawalsSlider";
 import { PromoVideo, useIsDesktop } from "@/components/PromoVideo";
 import { Rocket, Trophy, Video, Wallet, Gift } from "lucide-react";
 import { motion } from "framer-motion";
@@ -64,6 +65,9 @@ export default function Home() {
 
           {/* Sección: LOS JUEGOS MÁS JUGADOS DEL MOMENTO */}
           <TopGames />
+
+          {/* Sección: Slider 3D de Pagos y Retiros Verificados */}
+          <WithdrawalsSlider />
 
           <LinkButton
             href="https://lkhv.pro/141b4e5b"
