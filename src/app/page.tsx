@@ -8,6 +8,8 @@ import { BaseModal } from "@/components/BaseModal";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { PromoCodeBox } from "@/components/PromoCodeBox";
 import { SponsorsSlider } from "@/components/SponsorsSlider";
+import { TopGames } from "@/components/TopGames";
+import { PromoVideo, useIsDesktop } from "@/components/PromoVideo";
 import { Rocket, Trophy, Video, Wallet, Gift } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -16,17 +18,26 @@ export default function Home() {
   const [isWithdrawModalOpen, setIsWithdrawModalOpen] = useState(false);
   const [isPromoModalOpen, setIsPromoModalOpen] = useState(false);
   const [isEarnMoneyModalOpen, setIsEarnMoneyModalOpen] = useState(false);
+  const isDesktop = useIsDesktop();
 
   return (
     <main className="min-h-screen relative flex flex-col pb-24">
       <Background />
 
       {/* Contenedor principal 2 columnas en Desktop */}
-      <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-center lg:justify-between px-0 sm:px-4 gap-4 lg:gap-12 relative z-10 lg:pt-8 min-h-screen">
+      <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row lg:items-start lg:justify-between px-0 sm:px-4 gap-4 lg:gap-12 relative z-10 lg:pt-8 min-h-screen">
 
-        {/* Columna Izquierda (Perfil y Redes) - Centrada verticalmente al contenedor derecho */}
-        <div className="w-full lg:w-[45%] flex-shrink-0 flex items-center justify-center">
+        {/* Columna Izquierda (Perfil, Redes y Video lateral) */}
+        <div className="w-full lg:w-[45%] flex-shrink-0 flex flex-col items-center justify-center lg:sticky lg:top-6">
           <Header />
+          {isDesktop === true && (
+            <PromoVideo
+              src="/video-lateral.mp4"
+              label="Mira esto"
+              className="max-w-sm px-4 -mt-2"
+              maxHeight="max-h-[60vh]"
+            />
+          )}
         </div>
 
         {/* Columna Derecha (Enlaces y Promos) */}
@@ -43,9 +54,16 @@ export default function Home() {
             className="w-full max-w-2xl mx-auto mb-2 flex flex-col gap-3"
           >
             <SponsorsSlider />
+
+            {/* Video principal */}
+            <PromoVideo src="/video-principal.mp4" className="max-w-md mx-auto" />
+
             <PromoCodeBox code="MASPLATA500" />
 
           </motion.div>
+
+          {/* Sección: LOS JUEGOS MÁS JUGADOS DEL MOMENTO */}
+          <TopGames />
 
           <LinkButton
             href="https://lkhv.pro/141b4e5b"
@@ -60,7 +78,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] animate-[sweep_2s_ease-in-out_infinite]" />
                 <div className="absolute inset-0 bg-green-400/10 animate-pulse rounded-xl" />
                 <span className="relative text-[9px] sm:text-[11px] font-black text-green-300 uppercase tracking-[0.3em] mb-0.5 opacity-90 drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">Bono</span>
-                <span className="relative text-lg sm:text-3xl leading-none font-black text-transparent bg-clip-text bg-gradient-to-b from-white via-green-200 to-green-500 drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]">+500%</span>
+                <span className="relative text-sm sm:text-xl leading-none font-black text-transparent bg-clip-text bg-gradient-to-b from-white via-green-200 to-green-500 drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)] whitespace-nowrap">2000 USDT</span>
               </div>
             }
           />
@@ -91,7 +109,7 @@ export default function Home() {
 
           <LinkButton
             onClick={() => setIsPromoModalOpen(true)}
-            title="Reclama tu Bono Especial +500%"
+            title="Reclama tu Bono Especial 2000 USDT"
             subtitle="Multiplica tus primeros depósitos al instante"
             icon={<Gift className="w-6 h-6" />}
             delay={1.0}
@@ -104,6 +122,15 @@ export default function Home() {
             icon={<Wallet className="w-6 h-6" />}
             delay={1.1}
           />
+
+          {isDesktop === false && (
+            <PromoVideo
+              src="/video-lateral.mp4"
+              label="Mira esto"
+              className="max-w-md mx-auto mt-2"
+              maxHeight="max-h-[65vh]"
+            />
+          )}
         </motion.div>
       </div>
 
@@ -190,15 +217,15 @@ export default function Home() {
       <BaseModal
         isOpen={isPromoModalOpen}
         onClose={() => setIsPromoModalOpen(false)}
-        title="Bono Especial +500%"
+        title="Bono Especial 2000 USDT"
         maxWidth="max-w-4xl" // Wider modal for the split layout
       >
         <div className="flex flex-col md:flex-row gap-6 items-center md:items-stretch">
           {/* Left side: Promo Image */}
           <div className="w-full md:w-1/2 rounded-xl overflow-hidden border border-white/10 relative h-[400px] md:h-auto min-h-[400px]">
             <img
-              src="/ElHijodeljefe (15).jfif.jpeg"
-              alt="Bono 500% en primeros depósitos"
+              src="/juegos/bono-2000-usdt.jpg"
+              alt="Bono 2000 USDT en primeros depósitos"
               className="absolute inset-0 w-full h-full object-cover"
             />
             {/* Optional dark gradient overlay if needed for text over image, though the image seems to have its own */}
@@ -209,10 +236,10 @@ export default function Home() {
           <div className="w-full md:w-1/2 flex flex-col justify-center space-y-6">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2 leading-tight">
-                Multiplica tus primeros depósitos
+                Obtén tu bono de bienvenida de 2000 USDT
               </h3>
               <p className="text-gray-400 text-sm sm:text-base">
-                Sigue estos pasos para reclamar tu bono de más de 500% y empezar con ventaja.
+                Sigue estos pasos para reclamar tu bono de 2000 USDT y empezar con ventaja.
               </p>
             </div>
 

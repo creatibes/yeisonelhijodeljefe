@@ -6,11 +6,11 @@ import Image from "next/image";
 // Secuencia requerida: Logo 1Win, Texto Bono, Logo 1Win, Texto Bono...
 const items = [
     { type: 'logo', src: '/1win2.png', width: 120, height: 45 },
-    { type: 'text', text: 'BONO +500%' },
+    { type: 'text', text: 'BONO 2000 USDT' },
     { type: 'logo', src: '/1win2.png', width: 120, height: 45 },
-    { type: 'text', text: 'BONO +500%' },
+    { type: 'text', text: 'BONO 2000 USDT' },
     { type: 'logo', src: '/1win2.png', width: 120, height: 45 },
-    { type: 'text', text: 'BONO +500%' },
+    { type: 'text', text: 'BONO 2000 USDT' },
 ];
 
 const RepeatedList = () => (
