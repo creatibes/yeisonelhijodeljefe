@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Flame, ExternalLink } from "lucide-react";
 
 const games = [
-    { title: "Lucky Jet", src: "/juegos/lucky-jet.jpg", href: "https://lkmv.cc/f8b6380b", tag: "🔥 TOP 1" },
+    { title: "Lucky Jet", src: "/juegos/lucky-jet.jpg", href: "https://r1wovcg.com/v3/lucky-jet-updated?p=61kp", tag: "🔥 TOP 1" },
     { title: "Tower Rush", src: "/juegos/tower-rush.jpg", href: "https://lkuf.cc/8a74ce74", tag: "🚀 TENDENCIA" },
     { title: "Chicken Subway", src: "/juegos/chicken-subway.jpg", href: "https://lksi.pro/f34aaa", tag: "⚡ NUEVO" },
     { title: "Bono 2000 USDT", src: "/juegos/bono-2000-usdt.jpg", href: "https://lkde.cc/7e1b", tag: "💰 BONO" },
