@@ -94,7 +94,7 @@ export function WithdrawalsSlider() {
                     <CheckCircle2 className="w-3.5 h-3.5" /> Comprobantes Reales · MASPLATA500
                 </div>
                 <h2 className="text-2xl sm:text-4xl font-black italic uppercase leading-tight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-500 drop-shadow-[0_0_25px_rgba(251,146,60,0.45)]">
-                    Pagos y retiros con mi código
+                    ¡Con este código están cobrando de verdad!
                 </h2>
                 <div className="mx-auto mt-2 h-1 w-28 rounded-full bg-gradient-to-r from-yellow-300 via-orange-400 to-pink-500" />
             </div>
